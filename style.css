@@ -190,8 +190,13 @@ a{
   border: solid 2px #4C0033;
   border-radius: 5px;
   padding: 5px 50px;
+  transition: .3s ease-in-out;
  }
-
+ .reservation-btn-style:hover{
+   background-color:#4C0033;
+   border: solid 2px #fff;
+   cursor: pointer;
+ }
 
 
 /* ABOUT PAGE */
