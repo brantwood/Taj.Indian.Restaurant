@@ -1,3 +1,4 @@
+/* GLOBAL SELECTORS */
 body{
   background-color: #831214;
 
@@ -12,6 +13,10 @@ body{
 
 }
 
+a{
+  text-decoration: none;
+  color:#fff;
+}
 
 
 
@@ -80,6 +85,12 @@ body{
  /* SIDE MENU MODAL */
 
  .side-menu{
+  position: fixed;
+  top: 250;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,11 +103,9 @@ body{
   transition: 0.5s ease-in-out;
   transform: translateX(110%);
   height: 60vh;
-  width: 80vh;
+  width: 100%;
   line-height: 2;
   font-size: 50px;
-  z-index: 10;
-
  }
 
  li{
@@ -120,6 +129,58 @@ body{
   text-align:center;
  }
 
+
+/* SPECIALS BOARD */  
+#butter-chicken{
+  background-image: url('/imgs/butter-chick.jpg');
+  background-size:cover;
+  background-position: centre;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+#rogan-josh{
+  background-image: url('/imgs/rogan-josh.jpg');
+  background-size:cover;
+  background-position: centre;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+#black-lentil{
+  background-image: url('/imgs/black-lentil.webp');
+  background-size:cover;
+  background-position: centre;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+
+
+#butter-paneer{
+  background-image: url('/imgs/butter-paneer.jpg');
+  background-size:cover;
+  background-position: centre;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+
+}
+
+.specials-list{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:25px;
+}
+
+
+
+
+
  /* RESERVATION BUTTON STYLE */
 
  .reservation-btn-style{
@@ -127,4 +188,22 @@ body{
   border: solid 2px #319DA0;
   border-radius: 5px;
   padding: 5px 50px;
+ }
+
+
+
+ /* FOOTER */
+footer{
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #395B64;
+  width:100%;
+  margin:0px;
+  padding: 5px 10px;
+}
+
+ .footer-logo{
+  height:30px;
+  width:30px;
  }
