@@ -86,10 +86,10 @@ a{
 
  .side-menu{
   position: fixed;
-  top: 250;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 300px;
+  right:0px;
+  bottom:0px;
+  left:0px;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ a{
   border: solid black 1px;
   transition: 0.5s ease-in-out;
   transform: translateX(110%);
-  height: 60vh;
+  height: 700px;
   width: 100%;
   line-height: 2;
   font-size: 50px;
@@ -127,6 +127,7 @@ a{
  .specials-board{
   color:#fff;
   text-align:center;
+ 
  }
 
 
@@ -138,6 +139,7 @@ a{
   height: 250px;
   width: 500px;
   border-radius: 5px;
+ 
 }
 #rogan-josh{
   background-image: url('/imgs/rogan-josh.jpg');
@@ -184,11 +186,43 @@ a{
  /* RESERVATION BUTTON STYLE */
 
  .reservation-btn-style{
-  background-color:#6FEDD6;
-  border: solid 2px #319DA0;
+  background-color:#790252;
+  border: solid 2px #4C0033;
   border-radius: 5px;
   padding: 5px 50px;
  }
+
+
+
+/* ABOUT PAGE */
+#about-team{
+  display:flex;
+  justify-content: center;
+  padding-top:30px;
+}
+
+
+#about-team > img{
+width: 80%;
+height:80%;
+
+}
+
+.husky-img{
+  height:80%;
+  width:80%;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.about-writeup{
+  color:#fff;
+  text-align: center;
+  font-family: lato, san-serif;
+  line-height: 2;
+}
+
+
 
 
 
@@ -197,13 +231,14 @@ footer{
   display:flex;
   justify-content: center;
   gap: 20px;
-  background-color: #395B64;
+  background-color:#4C0033;
   width:100%;
   margin:0px;
-  padding: 5px 10px;
+  padding-top:3px;
+
 }
 
  .footer-logo{
-  height:30px;
-  width:30px;
+  height:20px;
+  width:20px;
  }
