@@ -3,11 +3,24 @@ body{
 
 }
 
+.dosis-font{
+  font-family: 'Dosis', sans-serif;
+}
+
+.lato-font{
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
 .header-nav-section{
     
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 60px;
 }
 
  /* Hamburger Menu  */
@@ -62,4 +75,56 @@ body{
 
  .menu-btn.open .menu-btn-burger::after{/*brings bottom bar up on right side*/
    transform: rotate(-45deg) translate(35px, 35px);
+ }
+
+ /* SIDE MENU MODAL */
+
+ .side-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('imgs/dining.room.jpeg'); 
+  background-size:cover;
+  background-position: center;
+  color:#fff; 
+  border: solid black 1px;
+  transition: 0.5s ease-in-out;
+  transform: translateX(110%);
+  height: 60vh;
+  width: 80vh;
+  line-height: 2;
+  font-size: 50px;
+  z-index: 10;
+
+ }
+
+ li{
+  list-style-type: none;
+ }
+
+ .show-menu{
+  transform: translateX(0%);
+ }
+
+ .heading-title{
+  color:#fff;
+  text-align:center;
+  line-height: .2;
+  border-bottom: solid 1px rgba(255,255,255,.4);
+  padding-bottom: 80px;
+ }
+
+ .specials-board{
+  color:#fff;
+  text-align:center;
+ }
+
+ /* RESERVATION BUTTON STYLE */
+
+ .reservation-btn-style{
+  background-color:#6FEDD6;
+  border: solid 2px #319DA0;
+  border-radius: 5px;
+  padding: 5px 50px;
  }
