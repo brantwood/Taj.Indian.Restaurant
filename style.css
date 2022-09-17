@@ -87,7 +87,7 @@ a{
 
  .side-menu{
   position: fixed;
-  top: 300px;
+  top: 250px;
   right:0px;
   bottom:0px;
   left:0px;
@@ -96,7 +96,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('imgs/dining.room.jpeg'); 
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/dining.room.jpeg");
   background-size:cover;
   background-position: center;
   color:#fff; 
@@ -107,6 +107,8 @@ a{
   width: 100%;
   line-height: 2;
   font-size: 50px;
+  font-family: lato, sans-serif;
+  font-weight: bold;
  }
 
  li{
@@ -129,47 +131,48 @@ a{
   color:#fff;
   text-align:center;
  padding-bottom: 50px;
+ padding-bottom: 146px;
  }
 
 
 /* SPECIALS BOARD */  
-#butter-chicken{
-  background-image: url('/imgs/butter-chick.jpg');
-  background-size:cover;
-  background-position: centre;
+
+.specials-list > li{
+  display:flex;
+  justify-content: center;
+  align-items:center;
   height: 250px;
   width: 500px;
   border-radius: 5px;
  
 }
-#rogan-josh{
-  background-image: url('/imgs/rogan-josh.jpg');
+#butter-chicken{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/butter-chick.jpg");
   background-size:cover;
   background-position: centre;
-  height: 250px;
-  width: 500px;
-  border-radius: 5px;
+  font-family:lato, san-serif;
+}
+#rogan-josh{
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/rogan-josh.jpg");
+  background-size:cover;
+  background-position: centre;
+  font-family:lato, san-serif;
 }
 
 #black-lentil{
-  background-image: url('/imgs/black-lentil.webp');
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/black-lentil.webp");
   background-size:cover;
   background-position: centre;
-  height: 250px;
-  width: 500px;
-  border-radius: 5px;
+  font-family:lato, san-serif;
 }
 
 
 
 #butter-paneer{
-  background-image: url('/imgs/butter-paneer.jpg');
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/butter-paneer.jpg");
   background-size:cover;
   background-position: centre;
-  height: 250px;
-  width: 500px;
-  border-radius: 5px;
-
+  font-family:lato, san-serif;
 }
 
 .specials-list{
@@ -221,7 +224,7 @@ height:80%;
 .husky-img{
   height:80%;
   width:80%;
-  padding-left: 100px;
+  padding-left: 190px;
   margin-bottom: 30px;
   padding-bottom:50px;
 }
@@ -240,7 +243,7 @@ height:80%;
   justify-content: space-between;
   padding-right: 40px;
   color:#fff;
-  padding-bottom: 50px;
+  padding-bottom: 493px; /*Exact padding to get the footer to stick to  the bottom without a scroll*/
   gap:100px;
 }
 
@@ -254,7 +257,7 @@ height:80%;
 .menu-grid{
 display:grid;
 grid-template-columns: 1fr 1fr;
-grid-gap:25px;
+grid-gap:20px;
 border-bottom: solid 1px rgba(255,255,255,.4);
 }
 
@@ -341,6 +344,9 @@ footer{
   font-size: 20px;;
 }
 
+.menu-grid{
+  padding-left:450px;
+}
 
 
 }
@@ -401,6 +407,9 @@ footer{
  @media only screen and (max-width :649px){
   .desktop-header-nav{
     display:none;
+  }
+  .husky-img{
+    padding-left: 70px;
   }
   }
   
